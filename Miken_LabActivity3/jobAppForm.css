@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+aside{
+   
+    width: 15%;
+    position: fixed;
+    background-color: #ffff;
+    height: 1024px;
+    top: 0;
+}
+body{
+   max-width: 100%;
+   background-color: #edf2fb;
+}
+.formTitle{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 1rem;
+}
+.formMotto{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 1300;
+    margin: 1rem 1rem;
+}
+header{
+    width: 100%;
+    background-color: #edf2fb;
+    border-radius: 10px;
+   
+}
+main{
+    width: 85%;
+   position: relative;
+   left: 20rem;
+   
+    border-radius: 50px;
+}
+section{
+    width: 100%;
+    background-color: #edf2fb;
+}
+.asideTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.progressContainer{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    height: 300px; 
+    justify-content: space-between;  
+    margin: 8rem 0rem;
+}
+.instructionContainer{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-bottom: 20rem;
+}
+.instrucTitle{
+    font-size: 2rem;
+    font-weight: 600;
+}
+#instructionsList{
+    position: relative;
+    left: 13rem;
+    
+}
+ .intruct {
+    font-weight: bold;
+    line-height: 2rem;
+ }
+ .intructSub{
+    position: relative;
+    left: 2rem;
+ }
+ .instrucBtn{
+    position: relative;
+    margin: 2rem ;
+    border-radius: 50px;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: #abc4ff;
+    left: 25%;
+    border: none;
+ }
+ .instrucBtn:hover{
+    cursor: pointer;
+    color: #ffffff;
+    
+ }
+ .fieldset1{
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+ }
+ .personalInformationContainer{
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 5rem auto;
+    
+ }
+ .personalInformationContainer fieldset input {
+    margin: 1rem;
+ }
+ .labels{
+    display: block;
+    font-weight: 500;
+    font-size: 2rem;
+ }
+ .txtInput{
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    background-color: #e2eafc;
+    text-align: center;
+    color: #051923;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+ }
+ .required{
+    color: red;
+    font-size: 3rem;
+ }
+
+ #dateOfBirth{
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+ }
+ #civilStatus{
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+    left: 1rem;
+ }
+ .btnBg{
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin: 1rem 0;
+    
+ }
+ .arrowBtn{
+    position: relative;
+    left: 2.5rem;
+ }
+ .nextBtn{
+    position: relative;
+    left: 85%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    bottom: 1rem;
+ }
+ .nextBtn:hover{
+    color: #00a6fb;
+ }
+ legend{
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    top: 1rem;
+    margin: 1rem;
+ }
+
+ .addressInfoContainer{
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 5rem auto;
+ }
+.fieldset2{
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+}
+.addressInfoContainer  fieldset input {
+    margin: 1rem;
+ }
+ .contactInfoContainer{
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 5rem auto;
+ }
+ .contactInfoContainer  fieldset input {
+    margin: 1rem;
+ }
+ .educationInfoContainer{
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 5rem auto;
+ }
+ .educationInfoContainer  fieldset input {
+    margin: 1rem;
+ }
+ .skillInfoContainer{
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 5rem auto;
+ }
+ .fieldset5{
+    border: none;
+    padding: 1rem;
+    border-radius: 20px;
+ }
+ .skillInfoContainer  fieldset textarea {
+    margin: 1rem;
+    width: 90%;
+    height: 20rem;
+    position: relative;
+    left: 3rem;
+ }
+ #textAreaLbl{
+    position: relative;
+    margin: 1rem;
+    left: 3rem;
+ }
+
+ .otherInfoContainer{
+    border-radius: 20px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 5rem auto;
+ }
+ .otherInfoContainer  fieldset input {
+    margin: 1rem;
+ }
+ .otherInfoContainer  fieldset ul {
+    margin-left: 5rem;
+    margin-top: 3rem;
+ }
+ .fieldset6{
+    border: none;
+    padding: 1rem;
+    border-radius: 20px;
+ }
+
+ .questions{
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+ }
+ .result{
+   position: relative;
+   border-radius: 20px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    display: none;
+ }
+ .result p{
+   font-size: 3rem;
+ }
+ .btnSubmit{
+   border: none;
+   border-radius: 20px;
+   width: 10%;
+   padding: 1rem;
+   background-color: #00a6fb;
+   font-size: 2rem;
+   position: relative;
+  left: 45%;
+   top: -4rem;
+ }
+ .btnSubmit:hover{
+   cursor: pointer;
+   color: #ffff;
+ }
+

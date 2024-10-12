@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miken's Corp Application Form</title>
+    <link rel="stylesheet" href="jobAppForm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+     <aside>
+            <div class="asideTitle">
+                <img src="John_lloyd_miken-removebg-preview.png" alt="Logo" width="100px" style="border-radius: 50px; margin: 0.5rem;">
+                <h4>Miken's Corp</h4>
+            </div>
+            <div style="font-size: 1.5rem; text-align: center; position: relative; top: 4rem;">
+                <img src="icons8-user-48.png" alt="User icon" width="70px">
+                <h5>Application Progress</h5>
+            </div>
+            <div class="progressContainer">
+             <p id="personalInfoDisplay">Personal Information</p>
+             <p id="addressInfoDisplay">Address</p> 
+             <p id="contanctInfoDisplay">Contacts</p>
+             <p id="educationalInfoDisplay">Educational Background</p> 
+             <p id="skillsInfoDisplay">Skills</p> 
+             <p id="otherInfoDisplay">Other Information</p>
+            </div>
+        </aside>
+    <main>
+        <header>
+            <h1 class="formTitle">Welcome to Miken's Corp. Application From</h1>
+            <p class="formMotto"><i>Apply Today, Grow Tomorrow</i></p>
+        </header>
+       
+
+        <section class="mainContainer">
+            <div class="instructionContainer" id="containerIntruction">
+                <p class="instrucTitle">Instructions:</p>
+                
+                <div id="instructionsList" >
+                    <ol>
+                        <li class="intruct">Read the Instructions Carefully:</li>
+                            <ul>
+                                <li class="intructSub">Before starting, thoroughly read the instructions provided on the form. Pay attention to specific requirements, deadlines, and any supporting documents needed.</li>
+    
+                            </ul>
+                        <li class="intruct">Answer All Questions Completely and Honestly:</li>
+                            <ul>
+                                <li class="intructSub">Provide complete and honest answers to all questions. Omitting information or providing false answers can disqualify you from the application process.</li>
+                            </ul>
+                        <li class="intruct">Question with asterisk (*) are required to be answer.</li>
+                        <li class="intruct">Gather Necessary Information:</li>
+                            <ul>
+                                <li class="intructSub">Personal details (name, date of birth, sex, etc.)</li>
+                                <li class="intructSub">Address information (unit/floor/room no. , street, subdivsion, etc.)</li>
+                                <li class="intructSub">Contacts information (Contacts number and email Address.)</li>
+                                <li class="intructSub">Educational background (schools attended, degrees earned)</li>
+                                <li class="intructSub">Related skills</li>
+                            </ul>
+                        <li class="intruct"> Double-Check Your Work:</li>
+                            <ul>
+                                <li class="intructSub">After completing the form, carefully review your answers to ensure accuracy. Check for any spelling or grammatical errors.</li>
+                            </ul>
+                    </ol>
+                    <button type="button" class="instrucBtn" onclick="intructionClick()">I Understand</button>
+                </div>
+
+            </div>
+
+        <form id="myForm">
+            <div class="personalInformationContainer" id="personalInformationContainer">
+        
+                <fieldset class="fieldset1">
+                    <legend>Personal Information</legend>
+                            
+                    <div class="PIpart1">
+                        <label for="lastName" class="labels">LastName <span class="required" >*</span></label>
+                            <input type="text" id="lastName" maxlength="30" class="txtInput" required>
+                            <label for="firstName" class="labels">FirstName <span class="required">*</span></label>
+                            <input type="text" id="firstName" maxlength="30" class="txtInput">
+                            <label for="middleName" class="labels">MiddleName <span class="required">*</span></label>
+                            <input type="text" id="middleName" maxlength="30" class="txtInput">
+                            <label for="extensionName" class="labels">ExtensionName <span class="required">*</span></label>
+                            <input type="text" id="extensionName" maxlength="30" class="txtInput" placeholder="Write none if there is no extension name">
+                            <label for="citizenship" class="labels">Citizenship <span class="required">*</span></label>
+                            <input type="text" id="citizenship" class="txtInput">
+                    </div>
+                            
+                    <div class="PIpart2">
+                            <label for="sex" class="labels">Sex <span class="required">*</span></label>
+                            <input type="radio" id="Bsex" name="Sex" class="radio">
+                            <label for="Bsex" class="radioLbl">Male </label>
+                            <input type="radio" id="Fsex" name="Sex" class="radio">
+                            <label for="Fsex" class="radioLbl" >Female</label>
+                           
+
+                           
+                            <label for="civilStatus" class="labels">Civil Status <span class="required">*</span></label>
+                            <select name="civilStatus" id="civilStatus">
+                                <option value="Married">Married</option>
+                                <option value="Single">Single</option>
+                                
+                                </select>
+                            <label for="dateOfBirth" class="labels">Date of Birth <span class="required">*</span></label>
+                            <input type="date" id="dateOfBirth" min="(01/01/1920)" required>
+                            <label for="placeOfBirth" class="labels">Place of Birth <span class="required">*</span></label>
+                            <input type="text" id="placeOfBirth" maxlength="20" class="txtInput">
+                    </div>
+                </fieldset>
+                <button type="button" class="btnBg arrowBtn " onclick="prevBtnToInsturct()"><img src="icons8-left-arrow-50.png" alt="Arrow Button" id="prevBtnIntruct"></button>
+                <input type="button"  class ="btnBg nextBtn" onclick = "nextBtnToAdd()"  id="nextBtnToAddress" value="Next">
+                
+          
+            
+        </div>
+
+        <div class="addressInfoContainer" id="addressInfoContainer">
+            
+                <fieldset class="fieldset2">
+                    <legend>Address Information:</legend>
+
+                   <div class="PIpart1">
+                        <label for="roomNo" class="labels">Unit/Floor/Room No.</label>
+                        <input type="number" id="roomNo." class="txtInput">
+                        <label for="BlockNo " class="labels">Block No.</label>
+                        <input type="number" id="BlockNo" class="txtInput">
+                        <label for="Street"class="labels">Street</label>
+                        <input type="text" id="Street" class="txtInput">
+                        <label for="Subdivision" class="labels">Subdivision</label>
+                        <input type="text" id="Subdivision" class="txtInput">
+                        <label for="Barangay" class="labels">Barangay</label>
+                        <input type="text" id="Barangay" class="txtInput">
+                   </div>
+                   <div class="PIpart2">
+                        <label for="Municipality" class="labels">City/Municipality <span class="required">*</span></label>
+                        <input type="text" id="Municipality" required class="txtInput">
+                        <label for="Province" class="labels">Province <span class="required">*</span></label>
+                        <input type="text" id="Province" required class="txtInput">
+                        <label for="zipCode" class="labels">Zip Code <span class="required">*</span></label>
+                        <input type="text" id="zipCode" required maxlength="4" pattern="\d{4}" title="Please enter a four-digit ZIP code" class="txtInput">
+                    </div>
+                  
+                </fieldset>
+                <button type="button" class="btnBg arrowBtn " onclick="prevBtnToPersonInfo()"><img src="icons8-left-arrow-50.png" alt="Arrow Button" id="prevBtnIntruct"></button>
+                <input type="button"  class ="btnBg nextBtn" onclick = "nextBtnToContanct()"  id="nextBtnToAddress" value="Next">
+            
+        </div>
+
+        <div class="contactInfoContainer" id="contactInfoContainer">
+            
+                <fieldset class="fieldset1">
+                    <legend>Contacts:</legend>
+
+                    <div>
+                        <label for="contactNum" class="labels">Contact Number <span class="required">*</span></label>
+                        <input type="text" id="contactNum" required maxlength="11"  class="txtInput">
+                    </div>
+                    <div>
+                        <label for="emailAddress" class="labels">Email Address <span class="required">*</span></label>
+                        <input type="email" id="emailAddress" required   class="txtInput" placeholder="Ex. mikenpogi@gmail.com">
+                    </div>
+                </fieldset>
+                <button type="button" class="btnBg arrowBtn " onclick="prevBtnAdd()"><img src="icons8-left-arrow-50.png" alt="Arrow Button" id="prevBtnIntruct"></button>
+                <input type="button"  class ="btnBg nextBtn" onclick = "nextBtnToEduc()"  id="nextBtnToAddress" value="Next">
+           
+        </div>
+
+        <div class="educationInfoContainer" id="educationInfoContainer">
+            
+                <fieldset class="fieldset1">
+                    <legend>Education Background:</legend>
+
+                   <div>
+                        <label for="elementary" class="labels">Elementary</label>
+                        <input type="text" id="elementary"class="txtInput">
+                        <label for="juniorHigh" class="labels">Secondary Junior High School</label>
+                        <input type="text" id="juniorHigh"class="txtInput">
+                   </div>
+                   <div>
+                        <label for="seniorHigh" class="labels">Secondary Senior High School</label>
+                        <input type="text" id="seniorHigh"class="txtInput">
+                        <label for="college" class="labels">College</label>
+                        <input type="text" id="college" class="txtInput">
+                   </div>
+                </fieldset>
+                <button type="button" class="btnBg arrowBtn " onclick="prevBtnToContact()"><img src="icons8-left-arrow-50.png" alt="Arrow Button" id="prevBtnIntruct"></button>
+                <input type="button"  class ="btnBg nextBtn" onclick = "nextBtnToSkills()"  id="nextBtnToAddress" value="Next">
+           
+        </div>
+
+        <div class="skillInfoContainer" id="skillInfoContainer">
+          
+                <fieldset class="fieldset5">
+                    <legend>Skills:</legend>
+
+                    <label for="skills" class="labels" id="textAreaLbl">Please specify your skill below</label>
+                    <textarea name="skills" id="skills" placeholder="Please specify your skill here" class="txtInput"></textarea>
+                </fieldset>
+                <button type="button" class="btnBg arrowBtn " onclick="prevBtnToEduc()"><img src="icons8-left-arrow-50.png" alt="Arrow Button" id="prevBtnIntruct"></button>
+                <input type="button"  class ="btnBg nextBtn" onclick = "nextBtnToOtherInfo()"  id="nextBtnToAddress" value="Next">
+          
+        </div>
+
+        <div class="otherInfoContainer" id="otherInfoContainer">
+            
+                <fieldset class="fieldset6">
+                    <legend>Other Information:</legend>
+
+                   <ul>
+                        <li>
+                            <p class="questions">If selected for employment, are you willing to submit to a background check?  <span class="required">*</span></p>
+                            <input type="radio" name="q1" required >
+                            <label for="qYes">Yes</label>
+                            <input type="radio" name="q1" required>
+                            <label for="qqNoYes">No</label>
+                        </li>
+                        <li>
+                            <p class="questions">Have you ever been found guilty of any administrative offense? <span class="required">*</span></p>
+                            <input type="radio" name="q2" required>
+                            <label for="qYes">Yes</label>
+                            <input type="radio" name="q2" required>
+                            <label for="qNo">No</label>
+                        </li>
+                        <li>
+                            <p class="questions">Have you been criminally charged before any court? <span class="required">*</span></p>
+                            <input type="radio" name="q3" required>
+                            <label for="qYes">Yes</label>
+                            <input type="radio" name="q3" required>
+                            <label for="qNo">No</label>
+                        </li>
+                        <li>
+                            <p class="questions">Have you been criminally charged before any court?  <span class="required">*</span></p>
+                            <input type="radio" name="q4" required>
+                            <label for="qYes">Yes</label>
+                            <input type="radio" name="q4" required>
+                            <label for="qNo">No</label>
+                        </li>
+                        <li>
+                            <p class="questions">Have you ever been a candidate in a national or local election held within the last year (except Barangay election)? <span class="required">*</span></p>
+                            <input type="radio" name="q5" required>
+                            <label for="qYes">Yes</label>
+                            <input type="radio" name="q5" required>
+                            <label for="qNo">No</label>
+                        </li>
+                        <li>
+                            <p class="questions">Have you ever been separated from the service in any of the following modes: resignation, retirement, dropped from the rolls, dismissal, termination, end of 
+                                term, finished contract or phased out (abolition) in the public or private sector? <span class="required">*</span> </p>
+                            <input type="radio" name="q6" required>
+                            <label for="qYes">Yes</label>
+                            <input type="radio" name="q6" required>
+                            <label for="qNo">No</label>
+                        </li>
+                        <li>
+                            Pursuant to: (a) Indigenous People's Act (RA 8371); (b) Magna Carta for Disabled Persons (RA 7277); and (c) Solo Parents Welfare Act of 2000 (RA 8972), please 
+answer the following: 
+                        </li>
+                            <ul>
+                                <li>
+                                    <p class="questions">Are you a member of any indigenous group? <span class="required">*</span></p>
+                                    <input type="radio" name="q7" required>
+                                    <label for="qYes">Yes</label>
+                                    <input type="radio" name="q7" required>
+                                    <label for="qNo">No</label>
+                                </li>
+                                <li>
+                                    <p class="questions">Are you a person with disability? <span class="required">*</span> </p>
+                                    <input type="radio" name="q8" required>
+                                    <label for="qYes">Yes</label>
+                                    <input type="radio" name="q8" required>
+                                    <label for="qNo">No</label>
+                                </li>
+                                <li>
+                                    <p class="questions"> Are you a solo parent?  <span class="required">*</span> </p>
+                                    <input type="radio" name="q9" required>
+                                    <label for="qYes">Yes</label>
+                                    <input type="radio" name="q9" required>
+                                    <label for="qNo">No</label>
+                                </li>
+                            </ul>
+                   </ul>
+                   
+                 
+                  
+                  
+                </fieldset>
+                <button type="button" class="btnBg arrowBtn " onclick="prevBtnToSkills()" ><img src="icons8-left-arrow-50.png" alt="Arrow Button" id="prevBtnIntruct"></button>
+               
+            
+        </div>
+
+        <input type="submit" class="btnSubmit" id="sumbitBtn">
+    </form>
+        
+        </section>
+
+        <div class="result" id="resultSection">
+            <p>Form Submission Successful</p>
+            <img src="icons8-check-48.png" alt="Check icon">
+        </div>
+    </main>
+    <script src="jobAppForm.js"></script>
+</body>
+</html>
